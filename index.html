@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Game</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="head">
+            <h1>Game</h1>
+        </div>
+        <div class="body welcome" id="welcomeScreen">
+    <h2>Welcome to the Game!</h2>
+    <p>Choose your mode and enter player names if needed:</p>
+
+    <fieldset class="mode-select">
+        <legend>Game Mode:</legend>
+        <label>
+            <input type="radio" name="mode" value="2p" checked> Two Players
+        </label>
+        <label>
+            <input type="radio" name="mode" value="ai"> Play against AI
+        </label>
+    </fieldset>
+
+    <div id="playerNames" class="player-names">
+        <label>
+            Player 1 Name:
+            <input type="text" id="player1Name" placeholder="Player 1">
+        </label>
+        <label>
+            Player 2 Name:
+            <input type="text" id="player2Name" placeholder="Player 2">
+        </label>
+    </div>
+
+    <button id="startButton">Start Game</button>
+</div>
+        <div class="body_hidden" id="gameArea">
+            <div class="score">
+                <span id="score1">0</span> : <span id="score2">0</span>
+            </div>
+            <i class="player" id="p1"></i>
+            <i class="player" id="p2"></i>
+            <i class="ball" id="ball"></i>
+        </div>
+        <div class="foot">
+            <p>&copy; 2024 Game Inc. All rights reserved. Developed by Rasga.</p>
+        </div>
+    </div>
+</body>
+</html>

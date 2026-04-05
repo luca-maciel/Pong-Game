@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+/* Tela inicial */
+#welcomeScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    border: 2px solid #444;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+#welcomeScreen h2 {
+    margin-bottom: 10px;
+    color: #0ff;
+}
+
+#welcomeScreen p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.mode-select {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.mode-select label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.player-names {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.player-names label {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.player-names input {
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0ff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    transition: background-color 0.2s;
+}
+
+#startButton:hover {
+    background-color: #0cc;
+}
+
+.screen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gameArea{
+    width: 80%;
+    height: 90%;
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.player {
+    width: 30px;
+    height: 200px;
+    position: absolute;
+}
+
+#p1 {
+    left: 20px;
+    top: 100px;
+    background-color: #0f0;
+}
+
+#p2 {
+    right: 20px;
+    top: 100px;
+    background-color: #f00;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.score{
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    font-size: 24px;
+}
