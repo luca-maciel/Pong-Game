@@ -69,6 +69,7 @@ body{
     width: 150px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
 #startButton {
